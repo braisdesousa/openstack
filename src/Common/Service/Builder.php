@@ -150,7 +150,7 @@ class Builder
             RequestException $exception = null
         ) {
             if($retries>0){
-                $this->output->write(sprintf(" <error>Ret#%s</error>", $retries),false,OutputInterface::VERBOSITY_VERBOSE);
+                //$this->output->write(sprintf(" <error>Ret#%s</error>", $retries),false,OutputInterface::VERBOSITY_VERBOSE);
             }
             // Limit the number of retries to 5
             if ($retries >= 15) {
